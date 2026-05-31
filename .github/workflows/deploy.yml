@@ -24,10 +24,8 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          cp styles.css site/
-          cp app.js site/
+          cp -r assets site/
           cp -r data site/
-          # Empecher Jekyll de traiter les fichiers statiques et CSV
           touch site/.nojekyll
 
       - name: Setup Pages
