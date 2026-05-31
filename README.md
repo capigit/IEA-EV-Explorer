@@ -57,12 +57,14 @@ Le déploiement est automatique à chaque push sur `main` via GitHub Actions.
 IEA-EV-Explorer/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml       # GitHub Actions — build + deploy GitHub Pages
+│       └── deploy.yml         # GitHub Actions — deploy GitHub Pages
+├── assets/
+│   ├── app.js                 # Logique, calculs et graphiques Plotly
+│   ├── styles.css             # Interface responsive
+│   └── favicon.svg            # Icône de l'onglet
 ├── data/
 │   └── IEAGlobalEVData2024.csv
-├── app.js                   # Logique, calculs et graphiques Plotly
-├── index.html               # Structure de l'application
-└── styles.css               # Interface responsive
+└── index.html                 # Structure de l'application
 ```
 
 ## Stack technique
