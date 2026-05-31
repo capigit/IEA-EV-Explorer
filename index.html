@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IEA Global EV Explorer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://cdn.plot.ly" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">EV</span>
+      <div>
+        <h1>IEA EV Explorer</h1>
+        <p>Global EV Outlook 2024</p>
+      </div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Fermer">&#x2715;</button>
+    </div>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-item active" data-view="overview">Vue d'ensemble</button>
+      <button class="nav-item" data-view="insights">Insights clés</button>
+      <button class="nav-item" data-view="profile">Profil pays</button>
+      <button class="nav-item" data-view="compare">A vs B</button>
+      <button class="nav-item" data-view="trends">Tendances</button>
+      <button class="nav-item" data-view="ranking">Classements</button>
+      <button class="nav-item" data-view="heatmap">Carte thermique</button>
+      <button class="nav-item" data-view="charging">Recharge</button>
+      <button class="nav-item" data-view="projections">Projections</button>
+    </nav>
+
+    <div class="source">
+      <strong>Source</strong>
+      <span>IEA Global EV Data 2024</span>
+      <span>54 pays et régions · 2010-2035</span>
+    </div>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+        <div>
+          <p class="eyebrow">Application statique HTML · CSS · JS</p>
+          <h2 id="view-title">Vue d'ensemble mondiale</h2>
+        </div>
+      </div>
+      <div class="status" id="status">Chargement des donnees...</div>
+    </header>
+
+    <section id="controls" class="controls" aria-label="Filtres"></section>
+    <section id="content" class="content"></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

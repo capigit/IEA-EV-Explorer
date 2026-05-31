@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0f4c81"/>
+  <!-- Lightning bolt (EV symbol) -->
+  <polygon points="36,8 20,34 30,34 28,56 44,30 34,30" fill="#4fc3f7" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
